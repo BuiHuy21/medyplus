@@ -1,0 +1,78 @@
+
+@font-face {
+        font-family: 'Poppins';
+        src:  url('../../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+        font-weight:400;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'Poppins';
+        src:  url('../../fonts/Poppins/Poppins-MediumItalic.ttf') format('truetype');
+        font-weight:500;
+        font-style: italic;
+      }
+      @font-face {
+        font-family: 'Poppins';
+        src:  url('../../fonts/Poppins/Poppins-ExtraBold.ttf') format('truetype');
+        font-weight:800;
+        font-style: normal;
+      }
+body{
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+}
+.container{
+        max-width: 1170px;
+        padding: 0 15px;
+        margin: auto;
+        width: 100%;
+        box-sizing: border-box;
+}
+.container-fluid{
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.cols(@number){
+  width:@number;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.col {
+        width: 25%;
+        padding: 0 15px;
+        box-sizing: border-box;
+        &-inner{
+          height: 300px;
+        }
+}
+
+.red{
+  background:red;
+}
+.blue{
+  background:blue;
+}
+.pink{
+background:pink;
+}
+.yellow{
+background:yellow;
+}
+.green{
+background: green;
+}   
+.crimson{
+background:crimson;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+}

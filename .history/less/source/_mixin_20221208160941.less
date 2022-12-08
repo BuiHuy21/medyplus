@@ -1,0 +1,40 @@
+// mixin column truyen vao gia tri phan tram (100%,50%,33%,25%)
+.cols(@number){ 
+        margin: 15px 0;
+        width:@number;
+        padding: 0 15px;
+        box-sizing: border-box;
+}
+
+//flex
+
+.flex(){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+//selected
+
+.appearance(@canet){
+        appearance:@canet;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+}
+
+//tranform
+
+.tranform(@scale){
+        transform: @scale;
+        -moz-transform: @scale;
+        -webkit-transform: @scale;
+        -ms-transform: @scale;
+        -o-transform: @scale;
+}
+.transiton(@scale ,){
+        transition: @scale;
+        -moz-transition: @scale;
+        -webkit-transition: @scale;
+        -ms-transition: @scale;
+        -o-transition: @scale;
+}

@@ -1,0 +1,114 @@
+.header{
+        &-top{
+                background-color: @bg-header;
+                font-size: 12px;
+                font-weight: 500;
+                color:@mini-title;
+                padding: 18px 0;
+                &-inner{
+                        align-items: center;
+                      display: flex;  
+                      justify-content: space-between;
+                      .web-info{
+                        display: flex;
+                        &-button{
+                                display: flex;
+                                margin-right: 21px;
+                                align-items: center;
+                                .info-icon{
+                                        height: 30px;
+                                        width: 30px;
+                                        line-height: 32px;
+                                        text-align: center;
+                                        border:1px solid @main-color;
+                                        color:@main-color;
+                                        margin-right: 10px;
+                                       font-size: 16px;
+                                }
+                                .info-content{
+                                        .title{
+                                        
+                                        }
+                                        .description{
+                                                a{
+                                                        letter-spacing: 0.01em;
+                                                        font-weight: 400;
+                                                        color:@text-white-color;
+                                                }
+                                        }
+                                }
+                              
+                        }
+                      }
+                }
+                .sl-language{
+                        letter-spacing: 0.02em;
+                        img{
+                                width: 17px;
+                                vertical-align:middle;
+                                padding-right: 7px;
+                        }
+                        a{
+                                letter-spacing: 0.02em;
+                                font-weight: 300;
+                                color:@text-white-color;
+                        }
+                }
+        }
+      
+        &-bottom{
+                &-inner{
+                        .flex();
+                        .form-control {
+                                display: flex;
+                                align-items: center;
+                                .search{
+                                        width: 556px;
+                                        form{
+                                                height: 38px;
+                                                border:1px solid @title-bg-color;
+                                                border-radius:40px;
+                                                display: flex;
+                                                overflow: hidden;
+                                                .search-sl{
+                                                         padding-left: 22px;
+                                                        line-height: 38px;
+                                                        padding-right: 36px;
+                                                        select{
+                                                                border:none;
+                                                                height: 24px;
+                                                                .appearance(none);
+                                                                background-image: url("");
+                                                        }
+                                                }
+                                                .search-input{
+                                                        flex: 1;
+                                                        line-height: 38px;
+                                                        input{
+                                                              width: 100%; 
+                                                              border:none; 
+                                                              height: 24px;
+                                                              border-left: 1px solid @title-bg-color;
+                                                              padding-left: 19px;
+                                                        }
+                                                }
+                                                .search-button{
+                                                button{
+                                                      
+                                                        border: none;
+                                                        background: @main-color;
+                                                        color:@text-white-color;
+                                                        font-size: 18px;
+                                                        height: 38px;
+                                                        line-height: 38px;
+                                                        width: 57px;
+                                                        text-align: center;
+                                                }
+                                                }
+                                        }
+                                }
+                        }
+                        
+                }
+        }
+}

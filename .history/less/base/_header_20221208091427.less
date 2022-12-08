@@ -1,0 +1,64 @@
+.header{
+        &-top{
+                background-color: @bg-header;
+                font-size: 12px;
+                font-weight: 500;
+                color:@mini-title;
+                padding: 18px 0;
+                &-inner{
+                        align-items: center;
+                      display: flex;  
+                      justify-content: space-between;
+                      .web-info{
+                        display: flex;
+                        &-button{
+                                display: flex;
+                                margin-right: 22px;
+                                align-items: center;
+                                .info-icon{
+                                        height: 30px;
+                                        width: 30px;
+                                        line-height: 30px;
+                                        text-align: center;
+                                        border:1px solid @main-color;
+                                        color:@main-color;
+                                        margin-right: 10px;
+                                        i{
+                                                &::after{
+
+                                                        height: 15px;
+                                                }
+                                        }
+                                }
+                                .info-content{
+                                        .title{
+                                        
+                                        }
+                                        .description{
+                                                a{
+                                                        letter-spacing: 0.01em;
+                                                        font-weight: 400;
+                                                        color:@text-white-color;
+                                                }
+                                        }
+                                }
+                              
+                        }
+                      }
+                }
+                .sl-language{
+                        img{
+                                width: 17px;
+                                vertical-align:middle;
+                                padding-right: 10px;
+                        }
+                        a{
+                                color:@text-white-color;
+                        }
+                }
+        }
+      
+        &-bottom{
+
+        }
+}

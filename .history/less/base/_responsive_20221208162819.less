@@ -1,0 +1,113 @@
+@media all and (max-width: 1170) {
+        
+}
+@media all and (max-width: 1024px) {
+       .header{
+        .logo-mobile{
+                display: block;
+        }
+        &-top{
+                &-inner{
+                        .web-info{
+                                &-button{
+                                        margin: 0;
+                                        .info-content{
+                                              display: none;  
+                                        }
+                                }
+                        }
+                }
+        }
+        &-bottom{
+                &-inner{
+                        .logo{
+                                display: none;
+                        }
+                        .form-control{
+                                width: 100%;
+                                .search{
+                                        order:2;
+                                        width: 100%;
+                                }
+                                .setting{
+                                        margin-left: 0;
+                                        margin-right: 19px;
+                                        order: 1;
+                                }
+                                .cart{
+                                        order: 3;
+                                }
+                        }
+                }
+        }
+       
+       }
+       .menu-bar{
+        &-inner{
+                nav{
+                        .nav-icon{
+                                display: block;
+                                font-size: 14px;
+                                text-transform: uppercase;
+                                i{
+                                        font-size: 22px;
+                                        vertical-align: bottom;
+                                        padding-left: 15px;
+                                }
+                        }
+                        .navbar{
+                                z-index: 1000;
+                                .transiton(all ,0.5s);
+                                .tranform(translateX(120%));
+                                -webkit-box-shadow: -8px 4px 20px 1px rgba(0,0,0,0.75);
+                                -moz-box-shadow: -8px 4px 20px 1px rgba(0,0,0,0.75);
+                                box-shadow: -8px 4px 20px 1px rgba(0,0,0,0.75);
+                                .nav-title{
+                                        display: block;
+                                }
+                                position: fixed;
+                                top: 0;
+                                right: 0;
+                                background: @text-white-color;
+                                height: 100vh;
+                                width: 30vw;
+                                .nav-item{
+                                        display: block;
+                                        margin: 0;
+                                        padding: 10px 15px;
+                                        border-bottom: 1px solid #bbb;
+                                       
+                                        a{
+                                        color: @main-color;
+
+                                        }
+                                }
+                             
+                        }
+                        .active{
+                                .tranform(translateX(0))
+                        }
+                }
+        }
+}
+}
+@media all and (max-width: 768px) {
+       
+}
+@media all and (max-width: 576px) {
+        .header{
+               &-bottom{
+                &-inner{
+                        .form-control{
+                                .search{
+                                        .search-s
+                                }
+                        }
+                }
+               } 
+        }
+       
+}
+@media all and (max-width: 375px) {
+       
+}

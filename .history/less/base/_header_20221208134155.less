@@ -1,0 +1,172 @@
+.header{
+        font-size: 12px;
+        &-top{
+                background-color: @bg-header;
+                font-weight: 500;
+                color:@mini-title;
+                padding: 18px 0;
+                &-inner{
+                        align-items: center;
+                      display: flex;  
+                      justify-content: space-between;
+                      .web-info{
+                        display: flex;
+                        &-button{
+                                display: flex;
+                                margin-right: 21px;
+                                align-items: center;
+                                .info-icon{
+                                        height: 30px;
+                                        width: 30px;
+                                        line-height: 32px;
+                                        text-align: center;
+                                        border:1px solid @main-color;
+                                        color:@main-color;
+                                        margin-right: 10px;
+                                       font-size: 16px;
+                                }
+                                .info-content{
+                                        .title{
+                                        
+                                        }
+                                        .description{
+                                                a{
+                                                        letter-spacing: 0.01em;
+                                                        font-weight: 400;
+                                                        color:@text-white-color;
+                                                }
+                                        }
+                                }
+                              
+                        }
+                      }
+                }
+                .sl-language{
+                        letter-spacing: 0.02em;
+                        img{
+                                width: 17px;
+                                vertical-align:middle;
+                                padding-right: 7px;
+                        }
+                        a{
+                                letter-spacing: 0.02em;
+                                font-weight: 300;
+                                color:@text-white-color;
+                        }
+                }
+        }
+      
+        &-bottom{
+                padding: 25px 0;
+                &-inner{
+                        .flex();
+                        .form-control {
+                                margin-bottom: 4px;
+                                display: flex;
+                                align-items: center;
+                                .search{
+                                        width: 556px;
+                                        form{
+                                                height: 38px;
+                                                border:1px solid @title-bg-color;
+                                                border-radius:40px;
+                                                display: flex;
+                                                overflow: hidden;
+                                                .search-sl{
+                                                        padding-left: 19px;
+                                                        line-height: 38px;
+                                                        padding-right: 39px;
+                                                        select{
+                                                                letter-spacing: 0.01em;
+                                                                border:none;
+                                                                height: 24px;
+                                                                .appearance(none);
+                                                                background-image: url("../../img/down.png");
+                                                                background-repeat: no-repeat;
+                                                                background-position-x:right;
+                                                                background-position-y:center;
+                                                                padding-right: 28px;
+                                                        }
+                                                }
+                                                .search-input{
+                                                        flex: 1;
+                                                        line-height: 38px;
+                                                        input{
+                                                                letter-spacing: 0.01em;
+                                                              width: 100%; 
+                                                              border:none; 
+                                                              height: 24px;
+                                                              border-left: 1px solid @title-bg-color;
+                                                              padding-left: 11px;
+                                                        }
+                                                }
+                                                .search-button{
+                                                button{
+                                                      
+                                                        border: none;
+                                                        background: @main-color;
+                                                        color:@text-white-color;
+                                                        font-size: 18px;
+                                                        height: 38px;
+                                                        line-height: 38px;
+                                                        width: 57px;
+                                                        text-align: center;
+                                                }
+                                                }
+                                        }
+                                }
+                                .control-item{
+                                        color:@main-color;
+                                        font-size: 26px;
+                                        margin-left:20px;
+                                       
+                                }
+                                .cart{
+                                        padding-right: 7px;
+                                        position: relative;
+                                        &::after{
+                                                position: absolute;
+                                                content:attr(data);
+                                                font-size: 10px;
+                                                color:@text-white-color;
+                                                display: block;
+                                                width: 15px;
+                                                height: 15px;
+                                                line-height: 15px;
+                                                text-align: center;
+                                                border-radius: 50%;
+                                                background:@bg-header;
+                                                top:3px;
+                                                right: 0;
+                                        }
+                                }
+                        }
+                        
+                }
+        }
+}
+.menu-bar {
+        font-size: 14px;
+        font-weight: 600;
+        color: #fff;
+        background:@
+        &-inner{
+                .flex();
+                .menu-bar-category{
+
+                }
+                nav{
+                        .nav-icon{
+                                display: none;
+                        }
+                        .navbar{
+                               .nav-item{
+                                display: inline-block;
+                                a{
+                                        text-transform: uppercase;
+                                }
+                               } 
+                        }
+                }
+        }
+}
